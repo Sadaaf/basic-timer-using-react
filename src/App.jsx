@@ -54,14 +54,14 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>Timer</h1>
-        <h3>{this.state.time}</h3>
-        <button onClick={this.decreaseTime}>-</button>
-        <button onClick={this.resetTime}>Reset</button>
-        <button onClick={this.increaseTime}>+</button>
+        <h1 style={{color: 'red'}}>Timer</h1>
+        <h3 style={{fontSize: "150px"}}>{this.state.time}</h3>
+        <button onClick={this.decreaseTime} className="btn">Decrease Time</button>
+        <button onClick={this.resetTime}  className="btn">Reset</button>
+        <button onClick={this.increaseTime} className="btn">Increase Time</button>
         <br></br>
-        <button onClick={this.startTimer}>Start</button>
-        <button onClick={this.pauseTimer}>Pause</button>
+        <button onClick={this.startTimer} className="btn">Start</button>
+        <button onClick={this.pauseTimer}  className="btn">Pause</button>
       </div>
     );
   }
